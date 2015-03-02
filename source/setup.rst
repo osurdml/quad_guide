@@ -3,10 +3,12 @@ Setup
 
 Before conducting experiments, a few things should be checked.
 
-* Calibrate sensors: Use QGroundControl to recalibrate the accelerometer,
-  gyroscope, and magnetometer if strange behavior is exhibited. Note that some
-  of these sensors are affected by temperature, so may need to be recalibrated
-  depending on the environment.
+Sensor Calibration
+------------------
+
+Use QGroundControl to recalibrate the accelerometer, gyroscope, and magnetometer
+if strange behavior is exhibited. Note that some of these sensors are affected
+by temperature, so may need to be recalibrated depending on the environment.
 
 PX4 Parameters
 --------------

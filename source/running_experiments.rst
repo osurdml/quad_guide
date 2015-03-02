@@ -1,8 +1,10 @@
 Running Experiments
 ===================
 
-Before running experiments, always verify that the vehicle is :doc:`set up
-<setup>` correctly.
+.. warning::
+
+   Before running experiments, always verify that the vehicle is :doc:`set up
+   <setup>` correctly.
 
 Initializing the System
 -----------------------
@@ -45,6 +47,12 @@ self-assign their IP addresses to ``192.168.0.9`` and ``192.168.0.10``. It may
 be useful to add these to your :file:`/etc/hosts` file for easier use.
 
 .. _ROS Network Setup Guide: http://wiki.ros.org/ROS/NetworkSetup/
+
+.. note::
+
+   Initial tests were conducted with the OSU Aerial Robotics Team router. The
+   vehicles will not be able to assign their own IP addresses on OSU networks
+   (``OSU_Secure``, etc.), so another router will need to be used.
 
 Flying
 ------
