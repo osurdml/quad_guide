@@ -12,6 +12,9 @@ Contents:
    :maxdepth: 2
 
    overview
+   running_experiments
+   xbees
+   setup
 
 Indices and tables
 ==================
