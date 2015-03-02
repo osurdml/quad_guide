@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'quad_guide'
+project = u'RDML Quadcopter Manual'
 copyright = u'2015, Kyle Cesare'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -208,7 +208,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'quad_guide.tex', u'quad\\_guide Documentation',
+  ('index', 'quad_guide.tex', u'RDML Quadcopter Manual',
    u'Kyle Cesare', 'manual'),
 ]
 
@@ -238,7 +238,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'quad_guide', u'quad_guide Documentation',
+    ('index', 'quad_guide', u'RDML Quadcopter Manual',
      [u'Kyle Cesare'], 1)
 ]
 
@@ -252,7 +252,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'quad_guide', u'quad_guide Documentation',
+  ('index', 'quad_guide', u'RDML Quadcopter Manual',
    u'Kyle Cesare', 'quad_guide', 'One line description of project.',
    'Miscellaneous'),
 ]
