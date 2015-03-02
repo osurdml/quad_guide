@@ -40,8 +40,17 @@ for `QGroundControl`_.
 
 .. _QGroundControl: http://www.qgroundcontrol.org/
 
+To connect to ROS, follow the `ROS Network Setup Guide`_. The quadcopters
+self-assign their IP addresses to ``192.168.0.9`` and ``192.168.0.10``. It may
+be useful to add these to your :file:`/etc/hosts` file for easier use.
+
+.. _ROS Network Setup Guide: http://wiki.ros.org/ROS/NetworkSetup/
+
 Flying
 ------
 
 Currently, there is no support for auto takeoff and landing. So, begin by arming
 the vehicle by moving the throttle stick to the bottom right.
+
+Next, raise the throttle to take off. Once the vehicle is stable and has reached
+a safe altitude, use the ``OFFBOARD`` switch to transition to autonomous control.
