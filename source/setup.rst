@@ -19,22 +19,15 @@ from QGroundControl.
 
 Here are some parameters that may need to be tuned depending on the application:
 
-+------------------+-----------------------------------------------------------+
-| Parameter name   | Description                                               |
-+==================+===========================================================+
-| INAV_W_XY_*      | These parameters dictate the weighting of sensor sources. |
-|                  | These will need to be adjusted depending on the sensors   |
-|                  | used.                                                     |
-+------------------+-----------------------------------------------------------+
-| MC_*_{P,I,D}     | These are the attitude controller PID gains. They may     |
-|                  | need to be adjusted for various payloads.                 |
-+------------------+-----------------------------------------------------------+
-| MPC_*_{P,I,D}    | These are the position controller PID gains.              |
-|                  |                                                           |
-|                  |                                                           |
-|                  |                                                           |
-|                  |                                                           |
-|                  |                                                           |
-+------------------+-----------------------------------------------------------+
+INAV_W_XY_*
+   These parameters dictate the weighting of sensor sources. These will need to
+   be adjusted depending on the sensors used.
+
+MC_*_{P,I,D}
+   These are the attitude controller PID gains. They may need to be adjusted for
+   various payloads.
+
+MPC_*_{P,I,D}
+   These are the position controller PID gains.
 
 .. _`osurdml/quadconf`: https://github.com/osurdml/quadconf
