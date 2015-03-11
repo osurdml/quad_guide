@@ -63,3 +63,8 @@ the vehicle by moving the throttle stick to the bottom right.
 
 Next, raise the throttle to take off. Once the vehicle is stable and has reached
 a safe altitude, use the ``OFFBOARD`` switch to transition to autonomous control.
+
+.. note::
+
+   The vehicle will reject offboard mode if it is not receiving offboard
+   setpoints at a reasonable rate (a few Hz).
