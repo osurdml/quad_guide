@@ -1,9 +1,15 @@
 Overview
 ========
 
-Before beginning development, you must understand the software environment
-running on the vehicle. The entire software stack runs under `Robot Operating
-System`_ (ROS). Within this system, a number of packages are used to enable certain
+The system consists of two major components. The first componenet is the
+software stack running on the onboard computer with ROS. Below that system is
+the PX4 firmware running on the flight control board.
+
+ROS
+---
+
+The entire onboard software stack runs under `Robot Operating System`_ (ROS).
+Within this system, a number of packages are used to enable certain
 functionalites of the vehicle. Here is a visualization of these packages:
 
 .. _Robot Operating System: http://ros.org
@@ -48,3 +54,21 @@ and sends velocity commands.
 .. _frontier_exploration: http://wiki.ros.org/frontier_exploration/
 .. _move_base: http://wiki.ros.org/move_base/
 .. _mavros: https://github.com/mavlink/mavros/
+
+PX4
+---
+
+The PX4 firmware, running on a `PX4FMU`_ flight control board, is responsible
+for the low-level stabilization. Normally, this system would accept rotational
+(or rotation velocity, or position, etc.) setpoints from an RC transmitter. In
+our setup, however, the setpoints are received from the onboard computer's ROS
+stack.
+
+.. note::
+
+   At the time of this note, the boards are flashed with commit
+   ``4938ff4c295dafac5ba1c221c6290e9e37e0442f``. It is possible that the
+   offboard control stack or offboard communication protocol within PX4 has
+   changed since then.
+
+.. _PX4FMU: https://pixhawk.org/modules/px4fmu
