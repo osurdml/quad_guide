@@ -25,8 +25,9 @@ Now, start the ROS stack::
    roslaunch qex quad.launch
 
 Before starting RGBDSLAMv2 make sure to align the camera to face perfectly
-north. You can visualize the `fcu` transformation to verify the direction. Then,
-start RGBDSLAMv2::
+north. This is necessary to ensure the PX4 and ROS coordinate frames line up.
+You can visualize the `fcu` transformation to verify the direction. Then, start
+RGBDSLAMv2::
 
    rosservice call /Q1/rgbdslam/ros_ui_b pause false
 
