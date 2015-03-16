@@ -3,6 +3,22 @@ Setup
 
 Before conducting experiments, a few things should be checked.
 
+PX4 Firmware
+------------
+
+We use a `custom branch`_ of the PX4 firmware available. This branch has a few
+changes to support our setup:
+
+.. _custom branch: https://github.com/osurdml/Firmware
+
+* ARMv7M stack checks are enabled to solve SD card mounting issues on the
+  PX4FMUv1 per `issue #1691`_.
+* The external HMC5883 digital compass has been moved to a different I2C
+  address.
+* The PX4Flow module has been enabled.
+
+.. _issue #1691: https://github.com/PX4/Firmware/issues/1691
+
 Sensor Calibration
 ------------------
 

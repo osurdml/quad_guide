@@ -64,11 +64,4 @@ for the low-level stabilization. Normally, this system would accept rotational
 our setup, however, the setpoints are received from the onboard computer's ROS
 stack.
 
-.. note::
-
-   At the time of this note, the boards are flashed with commit
-   ``4938ff4c295dafac5ba1c221c6290e9e37e0442f``. It is possible that the
-   offboard control stack or offboard communication protocol within PX4 has
-   changed since then.
-
 .. _PX4FMU: https://pixhawk.org/modules/px4fmu
